@@ -47,3 +47,5 @@ group :development do
   gem 'spring'
 end
 
+gem 'shopify_app'
+gem 'activeadmin', github: 'activeadmin'
