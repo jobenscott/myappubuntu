@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   # root :to => 'home#index'
-  root :to => 'home#index'
+  # root :to => 'home#index'
   mount ShopifyApp::Engine, at: '/'
 
   namespace :app_proxy do
