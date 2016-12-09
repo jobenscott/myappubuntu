@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   # root :to => 'home#index'
   
-  root :to => 'home#index'
+
   mount ShopifyApp::Engine, at: '/'
 
   namespace :app_proxy do
@@ -13,7 +13,8 @@ Rails.application.routes.draw do
     # GET /app_proxy/reviews will now be routed to
     # AppProxy::ReviewsController#index, for example
   end
-    # get 'index' => "home#index"
+   root :to => 'home#index'
+    get 'index' => "home#index"
 # root  'test#home'
 
   # The priority is based upon order of creation: first created -> highest priority.
