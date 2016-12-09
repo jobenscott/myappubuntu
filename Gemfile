@@ -48,6 +48,6 @@ group :development do
 end
 
 gem 'shopify_app'
-gem 'activeresource', github: 'rails/activeresource'
-# gem 'mongoid', '~> 4.0.0'
+# gem 'activeresource', github: 'rails/activeresource'
+gem 'mongoid', '~> 4.0.0'
 # gem 'activeadmin', github: 'activeadmin'
