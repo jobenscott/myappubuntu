@@ -13,7 +13,7 @@ Rails.application.routes.draw do
   #   # AppProxy::ReviewsController#index, for example
   # end
 # root 'home#index'
-get 'index' => "home#index"
+root 'index' => "home#index"
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
