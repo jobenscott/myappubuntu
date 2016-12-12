@@ -1,2 +1,3 @@
-<%= p @assets %>
-<%= @assets %>
+<% @assets.each do |asset| %>
+	<%= link_to asset.title, "https://#{@shop_session.url}/admin/themes/#{asset.id}/asset.json" %> 
+<% end %>
