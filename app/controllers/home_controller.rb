@@ -4,8 +4,8 @@ class HomeController < ShopifyApp::AuthenticatedController
   end
 
   def testIndex
-  	@assets = ShopifyAPI::Session.temp(@shopify_session.url, @shopify_session.token) {
-  		ShopifyAPI::Asset.find(:all, params: { limit: 10 })
-	}
+  	# @assets = ShopifyAPI::Session.temp(@shopify_session.url, @shopify_session.token) {
+  		@assets = ShopifyAPI::Asset.find(:all, params: { limit: 10 })
+	# }
   end
 end
