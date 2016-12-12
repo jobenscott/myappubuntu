@@ -14,7 +14,7 @@ Rails.application.routes.draw do
     # AppProxy::ReviewsController#index, for example
   end
    root :to => 'home#test_index'
-    get 'index' => "home#test_index"
+    get 'test_index' => "home#test_index"
 # root  'test#home'
 
   # The priority is based upon order of creation: first created -> highest priority.
