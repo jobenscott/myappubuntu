@@ -13,7 +13,7 @@
 
 <ul>
   <% @orders.each do |order| %>
-    <li><%= link_to 'something', "https://#{@shop_session.url}/admin/orders/#{order.id}.json", target: "_top" %></li>
+    <li><%= link_to 'something', "https://#{@shop_session.url}/admin/orders/#{order.id}", target: "_top" %></li>
   <% end %>
 </ul>
 
