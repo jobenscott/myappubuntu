@@ -1,6 +1,7 @@
 class HomeController < ShopifyApp::AuthenticatedController
   def index
-    @orders = ShopifyAPI::Asset.find(:all, params: { limit: 10 })
+    @token = ShopifyAPI::Session.access_token
+    # @orders = ShopifyAPI::Asset.find(:all, params: { limit: 10 })
   end
 
   def testIndex
@@ -11,6 +12,6 @@ class HomeController < ShopifyApp::AuthenticatedController
   end
 
   def getAccess 
-  	@token = ShopifyAPI::Session.access_token
+
   end
 end
