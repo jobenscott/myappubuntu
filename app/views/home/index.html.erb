@@ -1,2 +1,4 @@
-<%= link_to 'access_info', "https://#{@shop_session.url}/admin/oauth/access_token" %>
+<% @token = "https://#{@shop_session.url}/admin/oauth/access_token" %>
+<%= @token %>
+<%= p @token %> 
 
