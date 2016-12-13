@@ -3,12 +3,12 @@ class HomeController < ShopifyApp::AuthenticatedController
   	# https://{shop}.myshopify.com/admin/oauth/authorize?client_id={api_key}&scope={scopes}&redirect_uri={redirect_uri}&state={nonce
   	# @url = "https://#{@shop_session.url}/admin/oauth/access_token?client_id="https://{shop}.myshopify.com/admin/oauth/authorize?client_id={api_key}&scope={scopes}&redirect_uri={redirect_uri}&state={nonce
   #   session = ShopifyAPI::Session.new(self.url, self.access_token)
-  	@something = @shop_session
-  	@something2 = @shop_session.api_key
-  	@something3 = @shop_session.url
+  	# @something = @shop_session
+  	# @something2 = @shop_session.api_key
+  	# @something3 = @shop_session.url
   #   session.valid?
     # ShopifyAPI::Base.active_session(session)
-    # @orders = ShopifyAPI::Order.find(:all, params: { limit: 10 })
+    @orders = ShopifyAPI::Order.find(:all, params: { limit: 10 })
   end
 
   def testIndex
