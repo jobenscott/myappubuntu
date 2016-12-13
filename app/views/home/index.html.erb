@@ -1,11 +1,2 @@
+<%= link_to 'access_info', "https://#{@shop_session.url}/admin/oauth/access_token" %>
 
-
-<h2>Products</h2>
-
-<ul>
-  <% @orders.each do |order| %>
-    <li><%= link_to 'something', "https://#{@shop_session.url}/admin/orders/#{order.id}", target: "_top" %></li>
-  <% end %>
-</ul>
-
-<%= p @orders %>
