@@ -5,6 +5,7 @@ class HomeController < ShopifyApp::AuthenticatedController
   #   session = ShopifyAPI::Session.new(self.url, self.access_token)
   	@something = @shop_session
   	@something2 = @shop_session.api_key
+  	@something3 = @shop_session.url
   #   session.valid?
     # ShopifyAPI::Base.active_session(session)
     # @orders = ShopifyAPI::Order.find(:all, params: { limit: 10 })
