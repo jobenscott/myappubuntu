@@ -1,6 +1,8 @@
 class HomeController < ShopifyApp::AuthenticatedController
-  def index
-    @token = ShopifyAPI::Session.access_token
+  # def index
+  #   session = ShopifyAPI::Session.new(self.url, self.access_token)
+  #   session.valid?
+  #   ShopifyAPI::Base.active_session(session)
     # @orders = ShopifyAPI::Asset.find(:all, params: { limit: 10 })
   end
 
