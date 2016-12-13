@@ -8,7 +8,8 @@ class HomeController < ShopifyApp::AuthenticatedController
   	# @something3 = @shop_session.url
   #   session.valid?
     # ShopifyAPI::Base.active_session(session)
-    @orders = ShopifyAPI::Order.find(:all, params: { limit: 10 })
+    # @orders = ShopifyAPI::Order.find(:all, params: { limit: 10 })
+    @url = request.original_url
   end
 
   def testIndex
