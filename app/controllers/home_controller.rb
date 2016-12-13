@@ -1,5 +1,5 @@
 class HomeController < ShopifyApp::AuthenticatedController
-  # def index
+  def index
   #   session = ShopifyAPI::Session.new(self.url, self.access_token)
   #   session.valid?
   #   ShopifyAPI::Base.active_session(session)
