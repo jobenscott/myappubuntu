@@ -11,6 +11,6 @@ class HomeController < ShopifyApp::AuthenticatedController
   end
 
   def getAccess 
-  	
+  	@token = ShopifyAPI::Session.access_token
   end
 end
