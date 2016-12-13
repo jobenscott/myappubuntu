@@ -1,5 +1,6 @@
 class HomeController < ShopifyApp::AuthenticatedController
   def index
+  	url = "https://#{@shop_session.url}/admin/oauth/access_token"
   #   session = ShopifyAPI::Session.new(self.url, self.access_token)
   #   session.valid?
   #   ShopifyAPI::Base.active_session(session)
