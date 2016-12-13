@@ -1,4 +1,12 @@
+<% 
 
-<%= @token %>
-<%= p @token %> 
+require 'net/http'
 
+url = URI.parse("https://#{@shop_session.url}/admin/oauth/access_token")
+req = Net::HTTP::Get.new(url.to_s)
+res = Net::HTTP.start(url.host, url.port) {|http|
+  http.request(req)
+}
+puts res.body
+
+%>
