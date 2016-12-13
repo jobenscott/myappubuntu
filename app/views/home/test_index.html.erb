@@ -1,5 +1,6 @@
-<ul>
-  <% @orders.each do |order| %>
-    <li><%= link_to order.name, "https://#{@shop_session.url}/admin/orders/#{order.id}.json" %></li>
-  <% end %>
-</ul>
+<!-- <ul> -->
+  <% #@orders.each do |order| %>
+    <!-- <li><%=# link_to order.name, "https://#{@shop_session.url}/admin/orders/#{order.id}.json" %></li> -->
+  <% #end %>
+<!-- </ul> -->
+<%= link_to 'access_info', "https://#{@shop_session.url}/admin/oauth/access_token" %>

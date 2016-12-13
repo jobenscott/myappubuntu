@@ -9,4 +9,8 @@ class HomeController < ShopifyApp::AuthenticatedController
   		@orders = ShopifyAPI::Order.find(:all)
 	# }
   end
+
+  def getAccess 
+  	
+  end
 end
