@@ -10,7 +10,7 @@ class HomeController < ShopifyApp::AuthenticatedController
     # ShopifyAPI::Base.active_session(session)
     # @orders = ShopifyAPI::Order.find(:all, params: { limit: 10 })
    	# redirect_to "https://radiant-savannah-16136.herokuapp.com/getAccess"
-   	session = ShopifyAPI::Session.new(shop.name, shop.token)
+   	session = ShopifyAPI::Session.new(@session_shop.name, @session_shop.token)
    	ShopifyAPI::Base.active_session(session)
    	ShopifyAPI::ScriptTag.create(:event => "onload", :src => 'https://radiant-savannah-16136.herokuapp.com/assets/javascripts/test.js')
   end
