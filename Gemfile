@@ -47,7 +47,7 @@ group :development do
   gem 'spring'
 end
 
-gem 'shopify_app'
+gem 'shopify_app', '7.2.0'
 # gem 'rails-observers', github: 'rails/rails-observers'
 # gem 'activeresource', github: 'rails/activeresource'
 gem 'mongoid', '~> 4.0.0'
