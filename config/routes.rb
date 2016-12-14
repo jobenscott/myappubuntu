@@ -15,6 +15,7 @@ Rails.application.routes.draw do
   end
    root :to => 'home#index'
     get 'index' => "home#index"
+    get 'get_access' => "home#get_access"
 # root  'test#home'
 
   # The priority is based upon order of creation: first created -> highest priority.

@@ -9,7 +9,7 @@ class HomeController < ShopifyApp::AuthenticatedController
   #   session.valid?
     # ShopifyAPI::Base.active_session(session)
     # @orders = ShopifyAPI::Order.find(:all, params: { limit: 10 })
-    @url = request.original_url
+   	# redirect_to "https://radiant-savannah-16136.herokuapp.com/getAccess"
   end
 
   def testIndex
