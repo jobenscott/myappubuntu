@@ -12,7 +12,7 @@ class HomeController < ShopifyApp::AuthenticatedController
    	# redirect_to "https://radiant-savannah-16136.herokuapp.com/getAccess"
    	# session = ShopifyAPI::Session.new(@shopify_session.name, @shopify_session.token)
    	# ShopifyAPI::Base.active_session(session)
-   	ShopifyAPI::ScriptTag.create(:event => "onload", :src => 'https://radiant-savannah-16136.herokuapp.com/assets/javascripts/test.js')
+   	# ShopifyAPI::ScriptTag.create(:event => "onload", :src => 'https://radiant-savannah-16136.herokuapp.com/assets/javascripts/test.js')
   end
 
   def testIndex
